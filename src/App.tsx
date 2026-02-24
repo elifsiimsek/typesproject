@@ -72,8 +72,7 @@ function App() {
         });
       }
     });
-  };
-
+  }
   const unreadCount = useMemo(() => books.filter((b) => !b.isRead).length, [books]);
   const readCount = useMemo(() => books.filter((b) => b.isRead).length, [books]);
 
