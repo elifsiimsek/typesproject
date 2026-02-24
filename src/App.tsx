@@ -74,7 +74,6 @@ function App() {
     });
   };
 
-  // HESAPLAMALAR - useMemo sayesinde books değiştiği an sayaçlar ZORUNLU güncellenir
   const unreadCount = useMemo(() => books.filter((b) => !b.isRead).length, [books]);
   const readCount = useMemo(() => books.filter((b) => b.isRead).length, [books]);
 
